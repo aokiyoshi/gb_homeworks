@@ -14,11 +14,11 @@ for p in price_lst:
     print(f'{p//1:02.0f} руб {100 * (p % 1):02.0f} коп')
 print(f'ID списка: {id(price_lst)}')
 
-# Сортируем список так, чтобы не создавался новый
-price_lst.reverse()
+# Создаем новый список, отсортированный по убываню
+rever_lst = reversed(price_lst)
 
 # Снова выводим цены
 print()
-for p in price_lst:
+for p in rever_lst:
     print(f'{p//1:02.0f} руб {100 * (p % 1):02.0f} коп')
-print(f'ID списка: {id(price_lst)}')
+print(f'ID списка: {id(rever_lst)}')
