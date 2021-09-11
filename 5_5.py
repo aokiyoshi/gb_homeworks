@@ -4,7 +4,7 @@ def no_repeat(src):
     for val in src:
         count_dict.setdefault(val, 0)
         count_dict[val] = count_dict.get(val) + 1
-        if count_dict[val] <= 1:
+        if count_dict[val] == 1:
             result.setdefault(val, 1)
         else:
             result.pop(val, 0)
