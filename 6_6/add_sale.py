@@ -15,3 +15,5 @@ if len(args) == 2:
         result = (f'{values[0]}.{values[1]}').ljust(16)
     with open('6_6/bakery.csv', 'a', encoding='utf-8') as f:
         f.writelines(f'{result}\n')
+else:
+    print('Недостаточно аргументов')
