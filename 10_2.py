@@ -25,7 +25,12 @@ class Costume(Cloth):
         return self.size * 2 + 0.3
 
 
-clothes = (Coat(1), Costume(2))
+clothes = (Coat(1), Costume(2), Coat(2), Costume(1))
 
-for cl in clothes:
-    print(cl.calc_cloth_consum)
+total_consume = 0
+
+for c in clothes:
+    total_consume += c.calc_cloth_consum
+    print(c.calc_cloth_consum)
+
+print(total_consume)
